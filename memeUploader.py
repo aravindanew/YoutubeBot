@@ -7,7 +7,7 @@ import shutil
 
 
 
-reddit = praw.Reddit(client_id = "YaPJsXKF1TYThaLys7xnSg",
+reddit = praw.Reddit(client_id = "XXXXXXXXXXXXXXXXXXX",
                       client_secret= "XXXXXXXXXXXXXXXXXXXXXXX",
                       username="DaT1dUdE05",
                       password= "XXXXXXXXXXXXXXXXXX",
