@@ -3,14 +3,15 @@ import random
 from random import randint
 import requests
 import shutil
+import os
 
 
 
 
-reddit = praw.Reddit(client_id = "XXXXXXXXXXXXXXXXXXX",
-                      client_secret= "XXXXXXXXXXXXXXXXXXXXXXX",
+reddit = praw.Reddit(client_id = "",
+                      client_secret= "",
                       username="DaT1dUdE05",
-                      password= "XXXXXXXXXXXXXXXXXX",
+                      password= "",
                       user_agent="pythonmeme",
                       check_for_async=False
                     )
@@ -30,8 +31,41 @@ subreddit = random.choice(all_subred)
 
 all_subs= []
 
+file_path1 = r'C:\Memes\meme1.gif'
+file_path2 = r'C:\Memes\meme1.jpg'
+file_path3 = r'C:\Memes\meme2.gif'
+file_path4 = r'C:\Memes\meme2.jpg'
+file_path5 = r'C:\Memes\meme3.gif'
+file_path6 = r'C:\Memes\meme3.jpg'
+file_path7 = r'C:\Memes\meme4.gif'
+file_path8 = r'C:\Memes\meme4.jpg'
+file_path9 = r'C:\Memes\meme5.gif'
+file_path10 = r'C:\Memes\meme5.jpg'
+if os.path.exists(file_path1):
+    os.remove(file_path1)
+if os.path.exists(file_path2):
+    os.remove(file_path2)
+if os.path.exists(file_path3):
+    os.remove(file_path3)
+if os.path.exists(file_path4):
+    os.remove(file_path4)
+if os.path.exists(file_path5):
+    os.remove(file_path5)
+if os.path.exists(file_path6):
+    os.remove(file_path6)
+if os.path.exists(file_path7):
+    os.remove(file_path7)
+if os.path.exists(file_path8):
+    os.remove(file_path8)
+if os.path.exists(file_path9):
+    os.remove(file_path9)
+if os.path.exists(file_path10):
+     os.remove(file_path10)
+
 count = 1
 for i in range(5):
+
+
     top = subreddit.hot(limit = 100)
 
     for submission in top:
