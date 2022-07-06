@@ -8,10 +8,10 @@ import os
 
 
 
-reddit = praw.Reddit(client_id = "",
-                      client_secret= "",
+reddit = praw.Reddit(client_id = "YaPJsXKF1TYThaLys7xnSg",
+                      client_secret= "r-1twR94N4VQ691f5TN3IYIiM9FALw",
                       username="DaT1dUdE05",
-                      password= "",
+                      password= "hZJx2H/)Lck9#bA",
                       user_agent="pythonmeme",
                       check_for_async=False
                     )
@@ -90,5 +90,23 @@ for i in range(5):
 
     print(random_sub.url)
     print("Done.")
+
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+
+from selenium.webdriver.chrome.service import Service
+
+
+
+    
+path=Service("C:\chromedriver_win32 (1)\chromedriver.exe")
+driver = webdriver.Chrome(service=path)
+
+driver.get('https://app.clipchamp.com/login')
+
+
+
 
 
