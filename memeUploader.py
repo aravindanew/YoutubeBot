@@ -8,10 +8,10 @@ import os
 
 
 
-reddit = praw.Reddit(client_id = "YaPJsXKF1TYThaLys7xnSg",
-                      client_secret= "r-1twR94N4VQ691f5TN3IYIiM9FALw",
+reddit = praw.Reddit(client_id = "*",
+                      client_secret= "*",
                       username="DaT1dUdE05",
-                      password= "hZJx2H/)Lck9#bA",
+                      password= "*",
                       user_agent="pythonmeme",
                       check_for_async=False
                     )
