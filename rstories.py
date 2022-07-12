@@ -46,6 +46,7 @@ for i in range(1):
     count+=1
 
     print(random_sub.url)
+    print(random_sub.title)
     print("Done.")
 
 url = random_sub.url
@@ -58,6 +59,7 @@ for top_level_comment in submission.comments:
         print(top_level_comment.body)
         print()
     num-=1
+
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
