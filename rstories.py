@@ -86,6 +86,18 @@ myscreen = pyautogui.screenshot(region=(1000,600,1200,350))
 myscreen.save('C:\Stories\q.png')
 print("image saved")
 
+from pywinauto.application import Application
+
+app = Application(backend='uia').start('C:\Program Files\Audacity\Audacity.exe').connect(title = 'Audacity', timeout = 5)
+
+#app.Audacity.print_control_identifiers()
+
+rec = app.Audacity.child_window(title="Record", auto_id="11005", control_type="Button").wrapper_object()
+rec.click()
+
+app2 = Application(backend='uia').start('')
+
+
 
 
 
